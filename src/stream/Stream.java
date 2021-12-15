@@ -13,14 +13,14 @@ public class Stream {
 	@Test
 	public void test1() {
 		List<Employee> list = new ArrayList();
-		list.add(new Employee("ÕÅÈý",22,5000));
-		list.add(new Employee("ÀîËÄ",23,4000));
-		list.add(new Employee("ÍõÎå",25,3000));
-		list.add(new Employee("ÕÔÁù",32,6000));
-		list.add(new Employee("³Âç÷",19,4500));
-		list.add(new Employee("½âÓê³¼",27,8000));
-		list.add(new Employee("ÎâÐ°",24,7000));
-		list.add(new Employee("ÕÅÆðÁé",26,10000));
+		list.add(new Employee("å¼ ä¸‰",22,5000));
+		list.add(new Employee("æŽå››",23,4000));
+		list.add(new Employee("çŽ‹äº”",25,3000));
+		list.add(new Employee("èµµå…­",32,6000));
+		list.add(new Employee("é™ˆçª",19,4500));
+		list.add(new Employee("è§£é›¨è‡£",27,8000));
+		list.add(new Employee("å´é‚ª",24,7000));
+		list.add(new Employee("å¼ èµ·çµ",26,10000));
 		
 		list.stream()
 		.filter((employee) -> employee.getAge() > 25) 
@@ -44,14 +44,14 @@ public class Stream {
 		System.out.println("------------------------");
 		
 		List<Employee> list = new ArrayList();
-		list.add(new Employee("ÕÅÈý",22,5000));
-		list.add(new Employee("ÀîËÄ",23,4000));
-		list.add(new Employee("ÍõÎå",25,3000));
-		list.add(new Employee("ÕÔÁù",32,6000));
-		list.add(new Employee("³Âç÷",19,4500));
-		list.add(new Employee("½âÓê³¼",27,8000));
-		list.add(new Employee("ÎâÐ°",24,7000));
-		list.add(new Employee("ÕÅÆðÁé",26,10000));
+		list.add(new Employee("å¼ ä¸‰",22,5000));
+		list.add(new Employee("æŽå››",23,4000));
+		list.add(new Employee("çŽ‹äº”",25,3000));
+		list.add(new Employee("èµµå…­",32,6000));
+		list.add(new Employee("é™ˆçª",19,4500));
+		list.add(new Employee("è§£é›¨è‡£",27,8000));
+		list.add(new Employee("å´é‚ª",24,7000));
+		list.add(new Employee("å¼ èµ·çµ",26,10000));
 		
 		list.stream().sorted((e1,e2) -> {
 			if(e1.getAge()==e2.getAge()) {
